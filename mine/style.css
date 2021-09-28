@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Taviraj:300,400,700,300i,400i,700i");
+
+
+
+
+#header {
+    background: rgba(0, 0, 0, 0.75);
+    color: #a6a6a6;
+    cursor: default;
+    height: 3.25em;
+    left: 0;
+    line-height: 3.25em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+}
+
+
+#header > .logo {
+			display: inline-block;
+			height: inherit;
+			left: 1.25rem;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+		}
+
+        #header > a {
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			display: inline-block;
+			padding: 0 0.75em;
+			color: inherit;
+			text-decoration: none;
+			color: #FFF;
+		}
+
+			#header > a[href="#menu"] {
+				text-decoration: none;
+				-webkit-tap-highlight-color: transparent;
+			}
+
+            #header .toggle span {
+                display: none;
+            }
+
+            #header > a[href="#menu"] {
+				text-decoration: none;
+				-webkit-tap-highlight-color: transparent;
+			}
+
+            #header > a[href="#menu"]:before {
+                content: "";
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-transform: none !important;
+            }
+
+			#menu > ul.links {
+				list-style: none;
+				padding: 0;
+			}
+			#menu > ul.links > li {
+				padding: 0;
+			}
+			#menu > ul.links > li > a:not(.button) {
+				border: 0;
+				border-top: solid 1px rgba(255, 255, 255, 0.25);
+				color: #fff;
+				display: block;
+				line-height: 3.5em;
+				text-decoration: none;
+			}
+
+			
+			#menu > ul.links > li > .button {
+				display: block;
+				margin: 0.5em 0 0 0;
+			}
+
+			#menu > ul.links > li:first-child > a:not(.button) {
+				border-top: 0 !important;
+			}
